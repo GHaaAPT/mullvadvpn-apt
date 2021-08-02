@@ -7,6 +7,7 @@ I do this for myself, but if you want to use it, feel free to audit this repo fi
 
 # Install as APT repo manually
 ```shell
+sudo apt remove mullvad-vpn # if you installed the vpn client through deb file already, uninstall first.
 wget -qO- https://knugihk.github.io/mullvadvpn-apt/apt_key.pgp | sudo apt-key add -
 echo 'deb https://knugihk.github.io/mullvadvpn-apt/ stable main' | sudo tee /etc/apt/sources.list.d/mullvadvpn.list
 sudo apt update
