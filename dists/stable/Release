@@ -1,7 +1,7 @@
 Origin: knugi.github.io/mullvadvpn-apt
 Label: knugi.github.io/mullvadvpn-apt
 Codename: stable
-Date: Mon, 02 Aug 2021 04:34:01 UTC
+Date: Mon, 02 Aug 2021 04:36:11 UTC
 Architectures: amd64
 Components: main
 Description: Unofficial APT repository for Debian/Ubuntu client of Mullvad VPN
