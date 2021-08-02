@@ -1,0 +1,123 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Update Packages
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  schedule:
+    - cron:  '0 0 * * *'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    env:
+      PUSH: 1
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      - name: Import GPG key
+        id: import_gpg
+        uses: crazy-max/ghaction-import-gpg@v3
+        with:
+          gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.PASSPHRASE }}
+      - name: GPG user IDs
+        run: |
+          echo "fingerprint: ${{ steps.import_gpg.outputs.fingerprint }}"
+          echo "keyid:       ${{ steps.import_gpg.outputs.keyid }}"
+          echo "name:        ${{ steps.import_gpg.outputs.name }}"
+          echo "email:       ${{ steps.import_gpg.outputs.email }}"
+      # Runs a set of commands using the runners shell
+      - name: Install dependencies
+        run: |
+          sudo apt install reprepro
+      - name: Check Update
+        run: |
+          function update_repo() {
+            reprepro --basedir "$(pwd)/meta" includedeb stable "./MullvadVPN-$1_amd64.deb"
+            checksum=$(find pool/main/m/mullvad-vpn/ -type f -exec sha256sum "{}" +)
+            sed -i -E "s,[a-z0-9]{64}[ ]+pool/main/m/mullvad-vpn/mullvad-vpn_[0-9]{4}.[0-9]_amd64.deb,$checksum," README.md
+            echo "PUSH=0" >> $GITHUB_ENV
+          }
+          
+          function download_update() {
+            if [ -f /tmp/verify.log ]; then rm /tmp/verify.log; fi
+            wget -q "https://github.com/mullvad/mullvadvpn-app/releases/download/$1/MullvadVPN-$1_amd64.deb" --show-progress
+            wget -q "https://github.com/mullvad/mullvadvpn-app/releases/download/$1/MullvadVPN-$1_amd64.deb.asc" --show-progress
+            gpg2 --keyserver hkps://keyserver.ubuntu.com --recv-keys A1198702FC3E0A09A9AE5B75D5A1D4F266DE8DDF
+            gpg2 --verify "MullvadVPN-$1_amd64.deb.asc" "MullvadVPN-$1_amd64.deb" 2>&1 | tee /tmp/verify.log
+            grep 'Good signature from "Mullvad (code signing) <admin@mullvad.net>"' /tmp/verify.log
+            if [ "$?" -eq "0" ]; then
+                echo 'Good signature'
+                echo "$1" > last_update
+                return 0
+            else
+                echo 'Bad signature'
+                return 1
+            fi
+          }
+           
+          function compare (){
+            last_big=$(echo "$1" | cut -d "." -f 1)
+            last_small=$(echo "$1" | cut -d "." -f 2)
+            latest_big=$(echo "$2" | cut -d "." -f 1)
+            latest_small=$(echo "$2" | cut -d "." -f 2)
+            if [ "$latest_big" -gt "$last_big" ]; then
+                return 0
+            else
+                if [ "$latest_small" -gt "$last_small" ]; then
+                    return 0
+                fi
+            fi
+            return 1
+          }
+          
+          echo 'Checking update...'
+          website=$(wget -qO- https://mullvad.net/en/download/linux/)
+          latest=$(echo "$website" | egrep -o 'Latest version: [0-9]{4}.[0-9]' | egrep -o '[0-9]{4}\.[0-9]')
+          echo "PUSH=1" >> $GITHUB_ENV
+          if [ -f 'last_update' ]; then
+              last_update=$(cat last_update)
+              if compare "$last_update" "$latest"; then
+                echo 'Update available, downloading latest deb'
+                if download_update "$latest"; then
+                  update_repo "$latest"
+                fi
+              else
+                echo 'No update available'
+              fi
+          else
+            echo 'No version file found, assuming update available'
+            if download_update "$latest"; then
+              update_repo "$latest"
+            fi
+          fi
+      - name: Commit repo changes
+        if: ${{ env.PUSH == 0 }}
+        run: |
+          if [ -d dists ]; then rm -r dists; fi
+          if [ -d pool ]; then rm -r pool; fi
+          mv meta/dists ./
+          mv meta/pool ./
+          
+          git remote set-url origin https://github.com/KnugiHK/mullvadvpn-apt.git
+          git status
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git add last_update dists pool README.md
+          git commit -m "Update packages"
+      - name: Push changes
+        if: ${{ env.PUSH == 0 }}
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
