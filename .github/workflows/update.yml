@@ -44,7 +44,11 @@ jobs:
         run: |
           function update_repo() {
             reprepro --basedir "$(pwd)/meta" includedeb stable "./MullvadVPN-$1_amd64.deb"
-            checksum=$(find meta/pool/main/m/mullvad-vpn/ -type f -exec sha256sum "{}" +)
+            if [ -d dists ]; then rm -r dists; fi
+            if [ -d pool ]; then rm -r pool; fi
+            mv meta/dists ./
+            mv meta/pool ./
+            checksum=$(find pool/main/m/mullvad-vpn/ -type f -exec sha256sum "{}" +)
             sed -i -E "s,[a-z0-9]{64}[ ]+pool/main/m/mullvad-vpn/mullvad-vpn_[0-9]{4}.[0-9]_amd64.deb,$checksum," README.md
             echo "PUSH=0" >> $GITHUB_ENV
           }
@@ -103,12 +107,7 @@ jobs:
           fi
       - name: Commit repo changes
         if: ${{ env.PUSH == 0 }}
-        run: |
-          if [ -d dists ]; then rm -r dists; fi
-          if [ -d pool ]; then rm -r pool; fi
-          mv meta/dists ./
-          mv meta/pool ./
-          
+        run: |         
           git remote set-url origin https://github.com/KnugiHK/mullvadvpn-apt.git
           git status
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
