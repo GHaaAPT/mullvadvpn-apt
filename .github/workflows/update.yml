@@ -44,7 +44,7 @@ jobs:
         run: |
           function update_repo() {
             reprepro --basedir "$(pwd)/meta" includedeb stable "./MullvadVPN-$1_amd64.deb"
-            checksum=$(find pool/main/m/mullvad-vpn/ -type f -exec sha256sum "{}" +)
+            checksum=$(find meta/pool/main/m/mullvad-vpn/ -type f -exec sha256sum "{}" +)
             sed -i -E "s,[a-z0-9]{64}[ ]+pool/main/m/mullvad-vpn/mullvad-vpn_[0-9]{4}.[0-9]_amd64.deb,$checksum," README.md
             echo "PUSH=0" >> $GITHUB_ENV
           }
