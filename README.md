@@ -1,5 +1,5 @@
 # mullvadvpn-apt
-Unofficial APT repository for MullvadVPN 
+Unofficial APT repository for [MullvadVPN](https://github.com/mullvad/mullvadvpn-app)
 
 EZ update Mullvad VPN Debian/Ubuntu client
 
@@ -9,7 +9,7 @@ I do this for myself, but if you want to use it, feel free to audit this repo fi
 ```shell
 sudo apt remove mullvad-vpn # if you installed the vpn client through deb file already, uninstall first.
 wget -qO- https://knugihk.github.io/mullvadvpn-apt/apt_key.pgp | sudo apt-key add -
-echo 'deb https://knugihk.github.io/mullvadvpn-apt/ stable main' | sudo tee /etc/apt/sources.list.d/mullvadvpn.list
+echo 'deb [arch=amd64] https://knugihk.github.io/mullvadvpn-apt/ stable main' | sudo tee /etc/apt/sources.list.d/mullvadvpn.list
 sudo apt update
 sudo apt install mullvad-vpn
 ```
