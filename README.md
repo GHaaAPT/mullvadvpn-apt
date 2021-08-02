@@ -1,4 +1,4 @@
-# MullvadVPN-APT
+# mullvadvpn-apt
 Unofficial APT repository for MullvadVPN 
 
 EZ update Mullvad VPN Debian/Ubuntu client
