@@ -4,7 +4,7 @@ Hash: SHA512
 Origin: knugi.github.io/mullvadvpn-apt
 Label: knugi.github.io/mullvadvpn-apt
 Codename: stable
-Date: Mon, 02 Aug 2021 04:36:11 UTC
+Date: Mon, 02 Aug 2021 04:38:08 UTC
 Architectures: amd64
 Components: main
 Description: Unofficial APT repository for Debian/Ubuntu client of Mullvad VPN
@@ -22,17 +22,17 @@ SHA256:
  cc7ab307e0f76b6090e1612d1895d62c2d60d7fcb5be9a14707b91dc88e5bf4c 192 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEwvWeosFv7mOtfW/rQWZzEzGoyHMFAmEHdj0ACgkQQWZzEzGo
-yHM3oQ/+KT0+BOpyxLDkTzjrb+a/W+UUnHhqm6vRWTBjBJRwry2KSVjIGVUjEA83
-h08QpT2hrra4tEy4J8W3e+iN2xnD9LlfojVNMWJXKz0o+TCnQ1yg/nAuDXeycYnZ
-CO3MyQqgnBKpQxvlF9oknQ71riddxMi1GFCF9wnl2tVnsfD/h8m6PICVhTfO7XKR
-2/84ncapGp+/Y5aSmt4Q93l9t0UFPzQTi1O8h8cHWpZQg9f3K8B38oVI2I4HpH+k
-uga1C8/l/PkU2CjFx3XPQiDiQsKzhVKuY1Nd9afpU54bFss0g5VIpOmoo1avdWiE
-D9Qj9WiySAQ0ZIoHGFMtVndRwTobYSMEjVXnI/H8dcqUS62N/ri+g1LIVSupBjID
-YxXmm5BvRcz8I0yLGpIK9OjY7shc7SppwLvndkyZNzokDnLBV5NkdXFmR9gAVz9M
-phB+N9yWKPnMEqDQBIPF0FeOgPO8wUkbEwgyYFw3I+CkE6gE9+HNAu9ZmuVeOe4v
-Z87QI9axS/E5z4CO9POrRayJ1DFWvDJpC40uWGPHDq6KqOcLB8i6AMcVpt2rhIFY
-dAn1Ddszz562YH2iN6aG8Ge+mv2es2BX1eTE0VYj13Vwhb5QY1KRWOlqB7UI4fqR
-vLMaG6v5s0hf9OReW2BM4THWw29ZGBWUpoa2xh2V2t4Yi4Zd/Po=
-=A+dn
+iQIzBAEBCgAdFiEEwvWeosFv7mOtfW/rQWZzEzGoyHMFAmEHdrIACgkQQWZzEzGo
+yHNaVw//fNcisdtsvphVCibbCF/s0S+r+v17g1F3miRe0ifEL4DGRUPbD8Yy+HRr
+HRcwq+GqlSIqW8P9QjV36Fv9L0lZ89rlwE4NvrvKYAtCB4H+dh4x6LjmlDB6EGQk
+nSRZKqQ8CtY2cAaNR9ftJTbFcEJUq3PrNEnxVm6oiVZ0P66hygVs7lhFhNFBEuO9
+LCo5qtam8PcpMNETVOCxmjZN39dBw/wcLiKwxWkqe94P+EFlwT5/dC46rd1E9gFd
+nNT/Bt1fSwbStCAs8KfhsDxFLx75Yba0f4X1TIkCqBzzMfbqj3lZP2yvk+5vX8nq
+i66eIUfVf1r4m4Ouszui5pHuohQbunZNIFlNmvWGFwaUvZ92R/6nmHqbWY4L3Ulv
+/Ibz+rdNwMsD9hrqVU4S5SDBXePB3Wi7uE1Cly46+y9GJ+VytpN4TDtUC5KxJ4fA
+R/bLudOlGRv9bfoZS51IlMnB9PJF+1BACbSfo6S6X+Y/Y8lwpPier+uQ2g1zrL5s
+qETyRtDdIc1ACKD5py1CE5rSP9Ex/wRoa8w/VldCEPjpwKz0DBi4N+wcBF2tJPlJ
+Dz+FJsjcdC+abiWacPTTyoIfxaFwJDSxIrn8X2LcSoqDsYh7dZX/nY1+EgzY3PlI
+7cHxTHb3PInHJON6ROd1Ew/9buNW1/zP0VW0nyttnSTgYmuBxeM=
+=orpO
 -----END PGP SIGNATURE-----
