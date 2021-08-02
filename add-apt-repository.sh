@@ -74,8 +74,8 @@ if dpkg -l | egrep 'mullvad-vpn' &> /dev/null; then
         sudo apt remove mullvad-vpn -y
     fi
 fi
-wget -qO- https://knugihk.github.io/mullvadvpn-apt/apt_key.pgp | sudo apt-key add -
-echo 'deb [arch=amd64] https://knugihk.github.io/mullvadvpn-apt/ stable main' | sudo tee /etc/apt/sources.list.d/mullvadvpn.list
+wget -qO- https://knugihk.github.io/mullvadvpn-apt/apt_key.pgp | gpg --dearmor | sudo tee /usr/share/keyrings/mullvad-vpn-archive-keyring.gpg > /dev/null
+echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/mullvad-vpn-archive-keyring.gpg] https://knugihk.github.io/mullvadvpn-apt/ stable main' | sudo tee /etc/apt/sources.list.d/mullvad-vpn.list
 sudo apt update
 sudo apt install mullvad-vpn -y
 echo 'Installation complete'
