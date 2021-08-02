@@ -13,7 +13,7 @@ sudo apt update
 sudo apt install mullvad-vpn
 ```
 # Checksum
-2671c6e2a0fa9c7da5ed10981e66fb52cce7d26accb05b4c1d0ddc2a95dcab4d  meta/pool/main/m/mullvad-vpn/mullvad-vpn_2021.4_amd64.deb
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa  pool/main/m/mullvad-vpn/mullvad-vpn_2021.4_amd64.deb
 
 # Copyright
 The Mullvad VPN installer (deb file) is re-distributed in GPLv3
