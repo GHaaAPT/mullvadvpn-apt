@@ -33,6 +33,9 @@ function compare_linux_version() {
             compare_version $distro_version 18 04
             return $?
         else
+            if [ -z "$distro" ]; then
+                distro=$(egrep -o 'ID="[a-zA-Z]+"' /etc/os-release | grep -oP '"\K[^"]+')
+            fi
             echo "$distro"
             return 2
         fi
