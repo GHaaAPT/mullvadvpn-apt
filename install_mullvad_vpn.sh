@@ -72,10 +72,15 @@ if ! dpkg -l | egrep '[^-]gnupg[1,2]?[^-]' &> /dev/null; then
     sudo apt install gnupg -y
 fi
 if dpkg -l | egrep 'mullvad-vpn' &> /dev/null; then 
-    read -p "Mullvad VPN client already installed, which might causes trouble, remove it first? (Configuration will be retained) [y/n] " remove_flag
-    if [ ! "$proceed" = "y" ] && [ ! "$proceed" = "Y" ]; then 
-        sudo apt remove mullvad-vpn -y
-    fi
+    while true; do
+        read -p "Mullvad VPN client already installed, which might causes trouble, remove it first? (Configuration will be retained) [y/n] " remove_flag
+        if [ "$proceed" = "y" ] || [ "$proceed" = "Y" ]; then 
+            sudo apt remove mullvad-vpn -y
+            break
+        else if [ "$proceed" = "n" ] || [ "$proceed" = "N" ]; then
+            break
+        fi
+    done
 fi
 wget -qO- https://knugihk.github.io/mullvadvpn-apt/mullvad-vpn-archive-keyring.asc | gpg --dearmor | sudo tee /usr/share/keyrings/mullvad-vpn-archive-keyring.gpg > /dev/null
 echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/mullvad-vpn-archive-keyring.gpg] https://knugihk.github.io/mullvadvpn-apt/ stable main' | sudo tee /etc/apt/sources.list.d/mullvad-vpn.list
