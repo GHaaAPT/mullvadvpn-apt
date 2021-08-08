@@ -74,10 +74,10 @@ fi
 if dpkg -l | egrep 'mullvad-vpn' &> /dev/null; then 
     while true; do
         read -p "Mullvad VPN client already installed, which might causes trouble, remove it first? (Configuration will be retained) [y/n] " remove_flag
-        if [ "$proceed" = "y" ] || [ "$proceed" = "Y" ]; then 
+        if [ "$remove_flag" = "y" ] || [ "$remove_flag" = "Y" ]; then 
             sudo apt remove mullvad-vpn -y
             break
-        elif [ "$proceed" = "n" ] || [ "$proceed" = "N" ]; then
+        elif [ "$remove_flag" = "n" ] || [ "$remove_flag" = "N" ]; then
             break
         fi
     done
