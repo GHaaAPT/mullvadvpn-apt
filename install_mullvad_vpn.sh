@@ -77,7 +77,7 @@ if dpkg -l | egrep 'mullvad-vpn' &> /dev/null; then
         if [ "$proceed" = "y" ] || [ "$proceed" = "Y" ]; then 
             sudo apt remove mullvad-vpn -y
             break
-        else if [ "$proceed" = "n" ] || [ "$proceed" = "N" ]; then
+        elif [ "$proceed" = "n" ] || [ "$proceed" = "N" ]; then
             break
         fi
     done
