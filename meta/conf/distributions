@@ -1,5 +1,5 @@
-Origin: knugi.github.io/mullvadvpn-apt
-Label: knugi.github.io/mullvadvpn-apt
+Origin: knugihk.github.io/mullvadvpn-apt
+Label: knugihk.github.io/mullvadvpn-apt
 Codename: stable
 Architectures: amd64
 Components: main
