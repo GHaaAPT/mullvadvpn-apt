@@ -1,5 +1,5 @@
 Component: main
-Origin: knugi.github.io/mullvadvpn-apt
-Label: knugi.github.io/mullvadvpn-apt
+Origin: knugihk.github.io/mullvadvpn-apt
+Label: knugihk.github.io/mullvadvpn-apt
 Architecture: amd64
 Description: Unofficial APT repository for Debian/Ubuntu client of Mullvad VPN

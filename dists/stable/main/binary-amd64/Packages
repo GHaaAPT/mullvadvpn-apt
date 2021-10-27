@@ -1,19 +1,19 @@
 Package: mullvad-vpn
-Version: 2021.4
+Version: 2021.5
 License: GPL-3.0
 Vendor: Mullvad VPN <support@mullvad.net>
 Architecture: amd64
 Maintainer: Mullvad VPN <support@mullvad.net>
-Installed-Size: 280298
+Installed-Size: 283044
 Depends: iputils-ping
 Homepage: https://github.com/mullvad/mullvadvpn-app#readme
-Priority: extra
+Priority: optional
 Section: default
-Filename: pool/main/m/mullvad-vpn/mullvad-vpn_2021.4_amd64.deb
-Size: 70211514
-SHA256: 2671c6e2a0fa9c7da5ed10981e66fb52cce7d26accb05b4c1d0ddc2a95dcab4d
-SHA1: b66fdb71522abab4fca7ccfca1a7e9f67084d72c
-MD5sum: 7d434c622b1745c185b67b97af621ac6
+Filename: pool/main/m/mullvad-vpn/mullvad-vpn_2021.5_amd64.deb
+Size: 70859910
+SHA256: 877cbaa5a3507858af6efa38f9eeaae3a2f850b4c5e7452d66b5464a2f51dba0
+SHA1: ecb421374101a00471c4cd0b21ffe56704b6d828
+MD5sum: 8d6aee55b9f3e2b43e313cafe9fcff8c
 Description: 
   Mullvad VPN client
 
