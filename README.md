@@ -1,5 +1,5 @@
 # mullvadvpn-apt
-Unofficial APT repository for [MullvadVPN](https://github.com/mullvad/mullvadvpn-app) that will check for updates daily
+Unofficial APT repository for [MullvadVPN](https://github.com/mullvad/mullvadvpn-app) that will check for updates regularly
 
 EZ update your Mullvad VPN Debian/Ubuntu client
 
