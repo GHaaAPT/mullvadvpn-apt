@@ -81,8 +81,8 @@ jobs:
           }
           
           echo 'Checking update...'
-          website=$(wget -qO- https://mullvad.net/en/download/linux/)
-          latest=$(echo "$website" | egrep -o 'Latest version: [0-9]{4}.[0-9]' | egrep -o '[0-9]{4}\.[0-9]')
+          releases=$(curl -I "https://github.com/mullvad/mullvadvpn-app/releases/latest" | egrep 'releases\/tag\/[0-9]{4}.[0-9]')
+          latest=$(echo "$releases" | egrep -o '[0-9]{4}\.[0-9]')
           echo "PUSH=1" >> $GITHUB_ENV
           if [ -f 'last_update' ]; then
               last_update=$(cat last_update)
