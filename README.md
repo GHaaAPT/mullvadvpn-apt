@@ -16,7 +16,7 @@ sudo apt install mullvad-vpn -y
 
 # Install as APT repo automatically
 ```shell
-wget -qO- https://knugihk.github.io/mullvadvpn-apt/install_mullvad_vpn.sh | sudo bash
+wget -q https://knugihk.github.io/mullvadvpn-apt/install_mullvad_vpn.sh && sudo bash ./install_mullvad_vpn.sh
 ```
 
 # Checksum
