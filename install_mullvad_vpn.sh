@@ -34,7 +34,7 @@ function compare_linux_version() {
             return $?
         else
             if [ -z "$distro" ]; then
-                distro=$(egrep -o 'ID="[a-zA-Z]+"' /etc/os-release | grep -oP '"\K[^"]+')
+                distro=$(egrep -o 'ID="?[a-zA-Z]+"?' /etc/os-release | grep -oP '="?\K[^"]+')
             fi
             echo "$distro"
             return 2
@@ -60,7 +60,7 @@ if [ "$status" -eq 3 ]; then
     read -p "No distro release information (/etc/os-release) available, proceed? [y/N] " proceed
     if [ ! "$proceed" = "y" ] && [ ! "$proceed" = "Y" ]; then exit 1; fi
 elif [ "$status" -eq 2 ]; then
-    read -p "Distro $linux is not included in this checking, proceed? [y/N] " proceed
+    read -p "Distro \"$linux\" is not included in this checking, proceed? [y/N] " proceed
     if [ ! "$proceed" = "y" ] && [ ! "$proceed" = "Y" ]; then exit 1; fi
 elif [ "$status" -eq 1 ]; then
     read -p "$linux is not supported, proceed? [y/N] " proceed
@@ -87,3 +87,4 @@ echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/mullvad-vpn-archive-keyring.
 sudo apt update
 sudo apt install mullvad-vpn -y
 echo 'Installation complete'
+
