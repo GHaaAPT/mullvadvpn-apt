@@ -16,10 +16,7 @@ wget -qO- https://knugihk.github.io/mullvadvpn-apt/mullvad-vpn-archive-keyring.a
 echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/mullvad-vpn-archive-keyring.gpg] https://knugihk.github.io/mullvadvpn-apt/ stable main' | sudo tee /etc/apt/sources.list.d/mullvad-vpn.list
 ```
 ```shell
-sudo apt update
-```
-```shell
-sudo apt install mullvad-vpn -y
+sudo apt update && sudo apt install mullvad-vpn -y
 ```
 
 # Install as APT repo automatically
