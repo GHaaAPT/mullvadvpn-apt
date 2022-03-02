@@ -81,8 +81,8 @@ jobs:
           }
           
           echo 'Checking update...'
-          releases=$(curl -I "https://github.com/mullvad/mullvadvpn-app/releases/latest" | egrep 'releases\/tag\/[0-9]{4}.[0-9]')
-          latest=$(echo "$releases" | egrep -o '[0-9]{4}\.[0-9]')
+          releases=$(git ls-remote --tags https://github.com/mullvad/mullvadvpn-app.git | egrep -o 'refs/tags/[0-9]{4}\.[0-9]$')
+          latest=$(echo -n $releases | egrep -o '[0-9]{4}\.[0-9]$' | sort | tail -1 | tr -d '\n')
           echo "PUSH=1" >> $GITHUB_ENV
           if [ -f 'last_update' ]; then
               last_update=$(cat last_update)
