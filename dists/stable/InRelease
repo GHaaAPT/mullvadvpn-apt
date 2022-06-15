@@ -4,35 +4,35 @@ Hash: SHA512
 Origin: knugihk.github.io/mullvadvpn-apt
 Label: knugihk.github.io/mullvadvpn-apt
 Codename: stable
-Date: Wed, 02 Mar 2022 03:12:01 UTC
+Date: Wed, 15 Jun 2022 01:45:47 UTC
 Architectures: amd64
 Components: main
 Description: Unofficial APT repository for Debian/Ubuntu client of Mullvad VPN
 MD5Sum:
- 0f4fc7436f5712f762a2dc3e4221f952 555 main/binary-amd64/Packages
- 841f50827ea85a28729175a0575b0e34 383 main/binary-amd64/Packages.gz
+ 802e420368fc071ad7f8c12f5d180fc1 586 main/binary-amd64/Packages
+ e38f627fef0ee496763b2f6dc3d68872 403 main/binary-amd64/Packages.gz
  433f5cfd8fa5c867875fa86e7d20e847 196 main/binary-amd64/Release
 SHA1:
- 2c7456eb3cec98f4b543a9a57a9d53cfb77b525f 555 main/binary-amd64/Packages
- 348c057eefaf0cd87152e8813eddbfdfbb7f4995 383 main/binary-amd64/Packages.gz
+ 30e6c51aa25134b13ab3f4c284b162f856b27ece 586 main/binary-amd64/Packages
+ 5ce3bb7393d9219f6bdeacca137ed7157f0fd8e4 403 main/binary-amd64/Packages.gz
  92bc1edcfb217fd72c0ccdf9ba34844b5443155a 196 main/binary-amd64/Release
 SHA256:
- 7c419c8af85f63c9b21f7e7e170d96200b8f65c75cc20cf938adb113236fb0b4 555 main/binary-amd64/Packages
- 24e247d7fde3f8a4493d1867f61ad4e643a0098d12a8758f614eeddf6806d4bc 383 main/binary-amd64/Packages.gz
+ fc65969588dc53dd0eee28947d95d2c14bd6619ad7bbfe75ee1f2f996c3b9529 586 main/binary-amd64/Packages
+ 0c3970f14dea59f488ab29babc1288ebb371ffaa53db9b3d753a38819f2c8458 403 main/binary-amd64/Packages.gz
  5e4dd99c405b718b537950e61c23219fed5d46300b7b4ef4aa71fd28f7f58314 196 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEwvWeosFv7mOtfW/rQWZzEzGoyHMFAmIe4IMACgkQQWZzEzGo
-yHMGuRAApBQSEYDYovuihXvMa98FUYuHwa4nH9+hpN1ucn2rCC69KAId3Z9JrhSP
-H3yBypu8wupSmZSSVrD8XycSEhFYa3v/eaMTSh58OWRTRdsEVvJSVBNxlg3225mG
-YJrMLkkRSHjwSoP7WTZAGZYMZUP/TzKgdEqyRglblXryur2C45c5BIRLXNCWldAM
-PzAl73s0Wu98wUzFocyuhtq1XoWpO8VmeWrTKzUSMhkBasF6xa2PI2nqoa1p1DaT
-O+ni4xMb3TVakmB/Pz1qy4c0xI2pZ0BdL4Ys+TawtGRs5Fo9UWmbQhPGcJuM/R4D
-OcWtP9W9zWjvH+kjY41nxruqrRYcby7oYUIt0/2I8qesuKoR/7Y9SuaTrADPCkWz
-Szdvm0IbuL9lM/txXFaEumHGBHmSElWckjR4D7aXCZSpq1stCMABq94V82sBGCzV
-9cqZYlvVNXSBEJjTcuCTaUPC0i2tK1/0Q+oERYpNZuSByCBVhLT7QU0RlroHOx56
-uOOoqG0+lVXvSoy7DI5cab/r10cQq8YTLlKoFXujGsFj1g8ID001eogmn/J7YRpR
-jolTqI4NKduHNY0UgDKGaXlMG6wljBFqLJmIqcZvPZnGgMVyKLn2py/nqnogrAQQ
-QQN96pNnmdyAHqB+k9a1GZmLRWU+nPhSGsLFlzEHY3v5ZrQdyVs=
-=yZIk
+iQIzBAEBCgAdFiEEwvWeosFv7mOtfW/rQWZzEzGoyHMFAmKpOcwACgkQQWZzEzGo
+yHOqeg//WLycm1LMK6dM/i6/okDnS8/LnoPiewj5MwuPrxVorFjjtMqcVclI+cx4
+dI34P+kW4I7Y46oPmzvcfPtE+LUsHofgJ+XdhCN2mykO+3H0yc16g/1WIa9oXIVH
++hN4R1vXZJ8WXU0kJmLmItBbq0ADoYUHONNRgH5USQvOBhQjUEwjCmyvwy7Kte+X
+k2d8WhwV4o5JmzQUEk5vCSXRqZU/HW/dfEIu3trLEif3nr+TBslNBbHZVwb52Ozy
+V8jVjimygT59HEfwv2HPnU78hgKknFM26z99Iqtg/6aNtGcwVhssumubz7LuOcyq
+xCospZDvc2mZbths4yYu7IJxmfUOkwfeFiJCOcWw0s/u2BfNWTCUoebFwjfY7+E8
+bno68A6Dhx/3CpgWr/b+qX8Zk2yN0XsO/njX6VQLBv9gtVPBlWC6PqQpoEms35K+
+wPcxAYcjV2cvKAc9CLMql7Jo78fwMZZCCdDDGSMhez4uTy9jCQzHX82oVY+Leq4o
+JWmVEJrmO+MbzclZ1T8pls1TjEwYrxAarhM+EJ8RmZA9HYSzZyVcBAWCg8gZLG6e
+l/clRuLO0qqqgnWWfs3Y39FNRNjvM8HADtk/JMeo2kJAy+k19BXrirWA8lMmV/l5
+d9R2MzYoIqJpWf+82+3WaYiSCh1YYHurwNMekdoFrzZ4Tq7huCQ=
+=RI0B
 -----END PGP SIGNATURE-----
