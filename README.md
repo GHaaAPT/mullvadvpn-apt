@@ -25,7 +25,7 @@ wget -q https://knugihk.github.io/mullvadvpn-apt/install_mullvad_vpn.sh && sudo 
 ```
 
 # Checksum
-3b04ed5b39598c734548de7f5231496dcacf0aff7eb9c59810bda27588dea335  pool/main/m/mullvad-vpn/mullvad-vpn_2022.4_amd64.deb
+1b707891bfae82e918b42547dc71c8e37bb79fd1b4757e96c98500dd7fec67ea  pool/main/m/mullvad-vpn/mullvad-vpn_2022.5_amd64.deb
 
 # Copyright
 The Mullvad VPN installer (deb file) is re-distributed in GPLv3

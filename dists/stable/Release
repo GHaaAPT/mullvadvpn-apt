@@ -1,19 +1,19 @@
 Origin: knugihk.github.io/mullvadvpn-apt
 Label: knugihk.github.io/mullvadvpn-apt
 Codename: stable
-Date: Sun, 21 Aug 2022 01:50:45 UTC
+Date: Sat, 15 Oct 2022 02:12:32 UTC
 Architectures: amd64
 Components: main
 Description: Unofficial APT repository for Debian/Ubuntu client of Mullvad VPN
 MD5Sum:
- e0f5cd68367d1b911352024c5dadfd1c 586 main/binary-amd64/Packages
- a5bfae10f6ed582bcf6d1f03b05bcb1c 403 main/binary-amd64/Packages.gz
+ 9e23864def56fa7c19c4421af504aa79 586 main/binary-amd64/Packages
+ da2644b1fe4bbe3847da1ad99f4a82c1 403 main/binary-amd64/Packages.gz
  433f5cfd8fa5c867875fa86e7d20e847 196 main/binary-amd64/Release
 SHA1:
- 5d013fc12395e738779b88563f72d8d04928b283 586 main/binary-amd64/Packages
- 353e7ab66b472464d722bb59653201696b8608c3 403 main/binary-amd64/Packages.gz
+ 63944457447daea5f9590db9ec398d27bb2cbc23 586 main/binary-amd64/Packages
+ 3a5dfe34350dde012ed0a839d43b50529deece8b 403 main/binary-amd64/Packages.gz
  92bc1edcfb217fd72c0ccdf9ba34844b5443155a 196 main/binary-amd64/Release
 SHA256:
- afa8bd85f4d3a8a6e25551aa43862b89089c518c5c4a1aed691941e34085d014 586 main/binary-amd64/Packages
- b4b58d135582acee530d5cbe56bbda23471c14187987c03e4fb9f52d38359228 403 main/binary-amd64/Packages.gz
+ def156be4ba46ff49b978c9dd0261e97d6b90e0b0d7fb9199ea9a2bb934055eb 586 main/binary-amd64/Packages
+ 6c158d2cfa25451235d90a71498ba54de78c57835f272549e093e67580029729 403 main/binary-amd64/Packages.gz
  5e4dd99c405b718b537950e61c23219fed5d46300b7b4ef4aa71fd28f7f58314 196 main/binary-amd64/Release
