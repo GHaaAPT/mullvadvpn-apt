@@ -34,7 +34,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Install dependencies
         run: |
-          sudo apt update && sudo apt install reprepro
+          sudo apt install reprepro
       - name: Check Update
         run: |
           function update_repo() {
