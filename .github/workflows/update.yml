@@ -109,9 +109,4 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git add last_update dists pool README.md
           git commit -m "Update packages"
-      - name: Push changes
-        if: ${{ env.PUSH == 0 }}
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
+          git push
