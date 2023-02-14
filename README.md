@@ -10,10 +10,10 @@ I do this for myself, but if you want to use it, feel free to audit this repo fi
 sudo apt remove mullvad-vpn # if you installed the vpn client through deb file already, uninstall first.
 ```
 ```shell
-wget -qO- https://knugihk.github.io/mullvadvpn-apt/mullvad-vpn-archive-keyring.asc | gpg --dearmor | sudo tee /usr/share/keyrings/mullvad-vpn-archive-keyring.gpg > /dev/null
+wget -qO- https://ghaaapt.github.io/mullvadvpn-apt/mullvad-vpn-archive-keyring.asc | gpg --dearmor | sudo tee /usr/share/keyrings/mullvad-vpn-archive-keyring.gpg > /dev/null
 ```
 ```shell
-echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/mullvad-vpn-archive-keyring.gpg] https://knugihk.github.io/mullvadvpn-apt/ stable main' | sudo tee /etc/apt/sources.list.d/mullvad-vpn.list
+echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/mullvad-vpn-archive-keyring.gpg] https://ghaaapt.github.io/mullvadvpn-apt/ stable main' | sudo tee /etc/apt/sources.list.d/mullvad-vpn.list
 ```
 ```shell
 sudo apt update && sudo apt install mullvad-vpn -y
@@ -21,7 +21,7 @@ sudo apt update && sudo apt install mullvad-vpn -y
 
 # Install as APT repo automatically
 ```shell
-wget -q https://knugihk.github.io/mullvadvpn-apt/install_mullvad_vpn.sh && sudo bash ./install_mullvad_vpn.sh
+wget -q https://ghaaapt.github.io/mullvadvpn-apt/install_mullvad_vpn.sh && sudo bash ./install_mullvad_vpn.sh
 ```
 
 # Checksum
