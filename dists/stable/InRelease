@@ -4,7 +4,7 @@ Hash: SHA512
 Origin: knugihk.github.io/mullvadvpn-apt
 Label: knugihk.github.io/mullvadvpn-apt
 Codename: stable
-Date: Sat, 15 Oct 2022 02:12:32 UTC
+Date: Tue, 14 Feb 2023 10:46:45 UTC
 Architectures: amd64
 Components: main
 Description: Unofficial APT repository for Debian/Ubuntu client of Mullvad VPN
@@ -22,17 +22,17 @@ SHA256:
  5e4dd99c405b718b537950e61c23219fed5d46300b7b4ef4aa71fd28f7f58314 196 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEwvWeosFv7mOtfW/rQWZzEzGoyHMFAmNKFxIACgkQQWZzEzGo
-yHNxnBAAlhKxguXXhIaHpse9onZt+54UYqJaPFjhVxQQsrlHYZpwNzv1318JyVvb
-CiAdyOlBQV6AmRBNFdnJ6SDJtlmJnScUvrADRTUr/FN0FV/1CHci4Hq1hIvp5yj8
-8N0pEcVC4lG56YGwjfXaviz9LJ7WTieOBjcXBbPyZ5WDFz0qwnq9nKbdy4M5XLub
-JPlhnRXYfkcjaZVEyWlwtA21oaWnB1agotZGJwgWAkBGBazwyNT0h9AfdXgn6iRf
-svFxdXu52Y0UKuMh1uGQ8IZtTQ26Ssit8TXyyZ7ncIQqepIq0cLjIwdQdFZkGy8u
-5CqUl07GcKP3q8L9DXnRLTGrtSAE2+6wAE1a9ClqufSOzu1lHHXO0j8CggPXXn/I
-mSkKtHRnbnmGpeVrLhBqqIAcjccBmlVsp1Cl0FvjR1ZATJ12f7a8qN5vcBSHpg/0
-+AubzHVH/BlDuVZyhI4SlhHsd3gPz3wWgJuO7VUfPyXib/v3UDQ1pPrD9tzMpo8k
-66frQoBNlH6Fa7yRyMOphzNVEsZ47lmXYlc8B7aNzhg34N3Ei4Kxw0+95y0/OSlZ
-nB1LxmYHzQXyvh4w1EaAy3Sgo0w8DnYwDqg5ouVbeCned6wETwAsts5bsCSwBn7f
-uTFhxwDBekRXAAzPAOmBbbMMJDUj5+hPt84tLe6aUett/beyM0k=
-=hlq9
+iQIzBAEBCgAdFiEEwvWeosFv7mOtfW/rQWZzEzGoyHMFAmPrZpYACgkQQWZzEzGo
+yHNEtw/+PI7eZIoY0+wxX8yCfQ3jKBqxEam9ogx2u1Cb+VSgEzsmfs/DH0dt1Vwj
+irytED2Wh7vgVFz92QHh9CA8fd1tBZ2LjVhU4FYzsR9tnmWNgqLozWzYTa8+PY5z
+EtMMDgF1UbNXC1pzOfqluDwrjK/w4r1jII+V1Ragd3wQSw7gPcCJ8foMOY9HvTJB
+W1jtmZ/PhWEf8uL7aZcfGeIjEP/GjDWQ8qRPf+Lz0Czrv7IccUP82jDn/PDDc+Bg
+1o/+2RnDSgJEaI2V8JQ25wcZ5El8Pj0tPAPrcSWnq1Sre1X6j4qsxeje3dZw27pJ
+KwTyvxrooXaVK/tsm9U0z/ViDdZ1PWJTHZddMnahUYZ4+2nXXhm+QL3sh3OzszPM
+afgXxYxbxgVvv4Sp1IA2Hfv6saRmmSQrWAzOttyfsFK/tOR/PN+3MTRqlKyG72nm
+UV8besHffQf3DqwgSUD1fcya8XQQALC2L+eqOJwLhEes1WD+OLbAhJw8X5pQy80g
+QaNXMKTOU1JNzzuKmW4jVk41SrG4fMUNSWnDEaUjr+7PlQC0pbWfHENH52fhWwUv
+Knu7XtBtl74A34wfiOlmLo78OtzbM/Yr4o7//pX51CQpHSgwqEmVpbN8rPPfH7Lc
+6gYuGDZioyix5cuuBGq3+W6U+p0/wb6KIFBJa5AcaP5Oi5bTwak=
+=HB9D
 -----END PGP SIGNATURE-----
