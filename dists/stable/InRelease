@@ -4,35 +4,35 @@ Hash: SHA512
 Origin: knugihk.github.io/mullvadvpn-apt
 Label: knugihk.github.io/mullvadvpn-apt
 Codename: stable
-Date: Tue, 14 Feb 2023 10:46:45 UTC
+Date: Tue, 21 Feb 2023 01:07:13 UTC
 Architectures: amd64
 Components: main
 Description: Unofficial APT repository for Debian/Ubuntu client of Mullvad VPN
 MD5Sum:
- 9e23864def56fa7c19c4421af504aa79 586 main/binary-amd64/Packages
- da2644b1fe4bbe3847da1ad99f4a82c1 403 main/binary-amd64/Packages.gz
+ 04d90b32578a7ae35aa09ab12b9fb354 586 main/binary-amd64/Packages
+ e883764af9ab20f928b03a2cf84da2aa 402 main/binary-amd64/Packages.gz
  433f5cfd8fa5c867875fa86e7d20e847 196 main/binary-amd64/Release
 SHA1:
- 63944457447daea5f9590db9ec398d27bb2cbc23 586 main/binary-amd64/Packages
- 3a5dfe34350dde012ed0a839d43b50529deece8b 403 main/binary-amd64/Packages.gz
+ 4aa7ac561cb817e7c23ca070bf06ebdf0d9a947e 586 main/binary-amd64/Packages
+ 3c860d0063c5fe5a371bf86f7889161f758ad8bf 402 main/binary-amd64/Packages.gz
  92bc1edcfb217fd72c0ccdf9ba34844b5443155a 196 main/binary-amd64/Release
 SHA256:
- def156be4ba46ff49b978c9dd0261e97d6b90e0b0d7fb9199ea9a2bb934055eb 586 main/binary-amd64/Packages
- 6c158d2cfa25451235d90a71498ba54de78c57835f272549e093e67580029729 403 main/binary-amd64/Packages.gz
+ 1ef46ae78ca94f85e7ad5df77e50419744662e2a71d6c1dcc10249eb7162d1e4 586 main/binary-amd64/Packages
+ 62bd476c7936abb699e51a8a1ad53f00b70b7aa54a54f6ca9e86a350e507595b 402 main/binary-amd64/Packages.gz
  5e4dd99c405b718b537950e61c23219fed5d46300b7b4ef4aa71fd28f7f58314 196 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEwvWeosFv7mOtfW/rQWZzEzGoyHMFAmPrZpYACgkQQWZzEzGo
-yHNEtw/+PI7eZIoY0+wxX8yCfQ3jKBqxEam9ogx2u1Cb+VSgEzsmfs/DH0dt1Vwj
-irytED2Wh7vgVFz92QHh9CA8fd1tBZ2LjVhU4FYzsR9tnmWNgqLozWzYTa8+PY5z
-EtMMDgF1UbNXC1pzOfqluDwrjK/w4r1jII+V1Ragd3wQSw7gPcCJ8foMOY9HvTJB
-W1jtmZ/PhWEf8uL7aZcfGeIjEP/GjDWQ8qRPf+Lz0Czrv7IccUP82jDn/PDDc+Bg
-1o/+2RnDSgJEaI2V8JQ25wcZ5El8Pj0tPAPrcSWnq1Sre1X6j4qsxeje3dZw27pJ
-KwTyvxrooXaVK/tsm9U0z/ViDdZ1PWJTHZddMnahUYZ4+2nXXhm+QL3sh3OzszPM
-afgXxYxbxgVvv4Sp1IA2Hfv6saRmmSQrWAzOttyfsFK/tOR/PN+3MTRqlKyG72nm
-UV8besHffQf3DqwgSUD1fcya8XQQALC2L+eqOJwLhEes1WD+OLbAhJw8X5pQy80g
-QaNXMKTOU1JNzzuKmW4jVk41SrG4fMUNSWnDEaUjr+7PlQC0pbWfHENH52fhWwUv
-Knu7XtBtl74A34wfiOlmLo78OtzbM/Yr4o7//pX51CQpHSgwqEmVpbN8rPPfH7Lc
-6gYuGDZioyix5cuuBGq3+W6U+p0/wb6KIFBJa5AcaP5Oi5bTwak=
-=HB9D
+iQIzBAEBCgAdFiEEwvWeosFv7mOtfW/rQWZzEzGoyHMFAmP0GUIACgkQQWZzEzGo
+yHOHuhAAishZAOKOrJet/VKbxWiW5cQ/zvtTNSNXD9No1jytj3NFwD8iJnPgi2jN
+O4Ld/MrBIzAF4QlwneWjCL6I4gNJAGXhZ9/6PBh32zg97yObTcCIM3DOA0R0+sAa
+npGo/+d1w7eMjcT9kppT5UjZ6IBdc7tvUGP0OXH80tKJ6HymkZ8JhmBF1AfIxTql
+K5m16zUqfRtdT6MUSrqfqSMY8S7lb8rD/PafIszcXUir83d5tQ+THFKsTMH2CVPc
+2P5DIi4R3icJ++SXNdQ5OVgguhRsw7//p8p9jtg+i9BuWywHQiMwA8kIJufoLbG+
+W2siGz6cVqqaTkevXr/6wirHvh4NUQC2U84PUs40T9XQ1FX1fHJVgEbR1YC0iK03
+SXnnFDWwgoPFY+c/foKpjVXkc9Kc8oYgkerN//35/AZIoTwmqs3aDHd+HET0JBHL
+DRL3gIQiFlzn8HtSmL7yzjH4KuFRtJSs+wAWeH2m2/gDaZz8vc6xgKZEg3/d67g3
+6uxZik2rwQiIPIYPlAbAic7SU65EP5NT0Eyr5RrVjDcXH1kgtBn2LNV3AjtnwqSn
+uES/y05eHiEyup0gOR2+B+RJAsDTWOKFujs+YQIH+SKDjF8DbWn2g6OiT8hNLNHF
+FTIzvoMFMGVOqPzNezzzlGEgwk0VbKozCSN+/Y4RxNLyOpiUd0Y=
+=8yFn
 -----END PGP SIGNATURE-----
