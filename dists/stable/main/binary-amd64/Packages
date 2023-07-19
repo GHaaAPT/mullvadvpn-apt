@@ -1,19 +1,19 @@
 Package: mullvad-vpn
-Version: 2023.3
+Version: 2023.4
 License: GPL-3.0
 Vendor: Mullvad VPN <support@mullvad.net>
 Architecture: amd64
 Maintainer: Mullvad VPN <support@mullvad.net>
-Installed-Size: 304733
+Installed-Size: 315148
 Recommends: libappindicator3-1
 Homepage: https://github.com/mullvad/mullvadvpn-app#readme
 Priority: optional
 Section: default
-Filename: pool/main/m/mullvad-vpn/mullvad-vpn_2023.3_amd64.deb
-Size: 79308480
-SHA256: f972bdc54792b3ddde826b6c43ba804ee83f9fdb5a79092673866039b3d8be7e
-SHA1: d7f346c8e0537abac54de831e267ca3faff5a982
-MD5sum: f7b8d8b0dad31ebcc481be4b12ea8fd2
+Filename: pool/main/m/mullvad-vpn/mullvad-vpn_2023.4_amd64.deb
+Size: 82364040
+SHA256: ecda227eb5f5ff7a542474d82bed9d568b3fa05b0a898c328421a2d3b4ac1213
+SHA1: ddc2e1a14aa015cb590640faf99beffeeb8d7885
+MD5sum: 63278b4833681904dc42655c29f5744d
 Description: 
   Mullvad VPN client
 
