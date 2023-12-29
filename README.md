@@ -14,7 +14,7 @@ wget -qO- https://ghaaapt.github.io/mullvadvpn-apt/mullvad-vpn-archive-keyring.a
 chmod a+r /usr/share/keyrings/mullvad-vpn-archive-keyring.gpg
 ```
 ```shell
-echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/mullvad-vpn-archive-keyring.gpg] https://ghaaapt.github.io/mullvadvpn-apt/ stable main' | sudo tee /etc/apt/sources.list.d/mullvad-vpn.list
+echo 'deb [signed-by=/usr/share/keyrings/mullvad-vpn-archive-keyring.gpg] https://ghaaapt.github.io/mullvadvpn-apt/ stable main' | sudo tee /etc/apt/sources.list.d/mullvad-vpn.list
 ```
 ```shell
 sudo apt update && sudo apt install mullvad-vpn -y
