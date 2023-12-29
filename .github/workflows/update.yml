@@ -38,13 +38,15 @@ jobs:
       - name: Check Update
         run: |
           function update_repo() {
-            reprepro --basedir "$(pwd)/meta" includedeb stable "./MullvadVPN-$1_amd64.deb"
+            reprepro --basedir "$(pwd)/meta" includedeb stable "./MullvadVPN-$1_amd64.deb" "./MullvadVPN-$1_arm64.deb"
             if [ -d dists ]; then rm -r dists; fi
             if [ -d pool ]; then rm -r pool; fi
             mv meta/dists ./
             mv meta/pool ./
-            checksum=$(find pool/main/m/mullvad-vpn/ -type f -exec sha256sum "{}" +)
-            sed -i -E "s,[a-f0-9]{64}[ ]+pool/main/m/mullvad-vpn/mullvad-vpn_[0-9]{4}.[0-9]_amd64.deb,$checksum," README.md
+            checksum_amd64=$(sha256sum pool/main/m/mullvad-vpn/mullvad-vpn_$1_amd64.deb)
+            checksum_arm64=$(sha256sum pool/main/m/mullvad-vpn/mullvad-vpn_$1_arm64.deb)
+            sed -i -E "s,[a-f0-9]{64}[ ]+pool/main/m/mullvad-vpn/mullvad-vpn_[0-9]{4}.[0-9]_amd64.deb,$checksum_amd64," README.md
+            sed -i -E "s,[a-f0-9]{64}[ ]+pool/main/m/mullvad-vpn/mullvad-vpn_[0-9]{4}.[0-9]_arm64.deb,$checksum_arm64," README.md
             echo "PUSH=0" >> $GITHUB_ENV
           }
           
@@ -52,17 +54,24 @@ jobs:
             if [ -f /tmp/verify.log ]; then rm /tmp/verify.log; fi
             wget -q "https://github.com/mullvad/mullvadvpn-app/releases/download/$1/MullvadVPN-$1_amd64.deb" --show-progress
             wget -q "https://github.com/mullvad/mullvadvpn-app/releases/download/$1/MullvadVPN-$1_amd64.deb.asc" --show-progress
+            wget -q "https://github.com/mullvad/mullvadvpn-app/releases/download/$1/MullvadVPN-$1_arm64.deb" --show-progress
+            wget -q "https://github.com/mullvad/mullvadvpn-app/releases/download/$1/MullvadVPN-$1_arm64.deb.asc" --show-progress
             gpg2 --keyserver hkps://keyserver.ubuntu.com --recv-keys A1198702FC3E0A09A9AE5B75D5A1D4F266DE8DDF
             gpg2 --verify "MullvadVPN-$1_amd64.deb.asc" "MullvadVPN-$1_amd64.deb" 2>&1 | tee /tmp/verify.log
             grep 'Good signature from "Mullvad (code signing) <admin@mullvad.net>"' /tmp/verify.log
             if [ "$?" -eq "0" ]; then
-                echo 'Good signature'
-                echo "$1" > last_update
-                return 0
-            else
-                echo 'Bad signature'
-                return 1
+                echo 'Good signature (amd64)'
+                : > /tmp/verify.log
+                gpg2 --verify "MullvadVPN-$1_arm64.deb.asc" "MullvadVPN-$1_arm64.deb" 2>&1 | tee /tmp/verify.log
+                grep 'Good signature from "Mullvad (code signing) <admin@mullvad.net>"' /tmp/verify.log
+                if [ "$?" -eq "0" ]; then
+                  echo 'Good signature (arm64)'
+                  echo "$1" > last_update
+                  return 0
+                fi
             fi
+            echo 'Bad signature'
+            return 1
           }
            
           function compare (){
