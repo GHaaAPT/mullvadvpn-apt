@@ -1,38 +1,47 @@
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
-Origin: knugihk.github.io/mullvadvpn-apt
-Label: knugihk.github.io/mullvadvpn-apt
+Origin: ghaaapt.github.io/mullvadvpn-apt
+Label: ghaaapt.github.io/mullvadvpn-apt
 Codename: stable
-Date: Fri, 29 Dec 2023 13:46:56 UTC
-Architectures: amd64
+Date: Fri, 29 Dec 2023 14:16:48 UTC
+Architectures: amd64 arm64
 Components: main
 Description: Unofficial APT repository for Debian/Ubuntu client of Mullvad VPN
 MD5Sum:
  0257c6f37b6e38b9273d3b8842180e90 586 main/binary-amd64/Packages
  46fee0da40cc4934a509015d3333a1e1 402 main/binary-amd64/Packages.gz
- 433f5cfd8fa5c867875fa86e7d20e847 196 main/binary-amd64/Release
+ 4e82fdfbcb4d7f7577163bd9acb511a1 196 main/binary-amd64/Release
+ 6cafb7176ca8eac78822ef460d56a878 586 main/binary-arm64/Packages
+ 0effbe07653c2303c93171eeb126161f 402 main/binary-arm64/Packages.gz
+ 9a9930cf44e8d6950df04f8b8ca37a0b 196 main/binary-arm64/Release
 SHA1:
  49200ba7bebcdd9bde258b13f1662b35de0dc518 586 main/binary-amd64/Packages
  9d0bc343faccfe8520a5969139c295161cf3eace 402 main/binary-amd64/Packages.gz
- 92bc1edcfb217fd72c0ccdf9ba34844b5443155a 196 main/binary-amd64/Release
+ 10eb09268c110fcc29ade6609074cbcddc1e39ec 196 main/binary-amd64/Release
+ 1efb543bc5d92f2a4fefa52856382771a68ff6bd 586 main/binary-arm64/Packages
+ 7da4cb1c463bca9c7cdd7398906a742bbfb7e747 402 main/binary-arm64/Packages.gz
+ e8af977e85a8229b3ad0673c44949787537e6dc9 196 main/binary-arm64/Release
 SHA256:
  a612ff140ab50d5a95eedb87fc89b10d606d862d681391de95ddde13ff83e68f 586 main/binary-amd64/Packages
  52a676f7043b596278497c40dabd7596d2fdbd96281f7ee3400c1b162a73525b 402 main/binary-amd64/Packages.gz
- 5e4dd99c405b718b537950e61c23219fed5d46300b7b4ef4aa71fd28f7f58314 196 main/binary-amd64/Release
+ 39f751606b5d0d7892d9eb31d71fd5a0f09c58ac00b2fb689063a24b7da1a978 196 main/binary-amd64/Release
+ dbef3f4170c5aae448a83b9821ec60175ea861b424886e9d99becb8cdc8af882 586 main/binary-arm64/Packages
+ 3bcd21a778f7dce0ec5dd396c0d31925b71b7dc8fc18f23e6d39b013f72bdc4e 402 main/binary-arm64/Packages.gz
+ b8cd3039673ed64d38a0a12a93c08dca900c866070a4de55736ef6473511d796 196 main/binary-arm64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEwvWeosFv7mOtfW/rQWZzEzGoyHMFAmWOzdEACgkQQWZzEzGo
-yHMfCA/6A0y0yty2fW0jPUFwh7gnlVKgpLu1j9qO9jWlGYHWDLIC6iypQqTyOJIY
-nYE7uvluJnhks3Zxq1DYHGgRnDfaY0x+MTJkSbtjuOa541ZjCXb5tksyw6ymCDXB
-WWeRpb9m9TyVU8/cbVSb9pbQ9yVU0SUI8IPUDFfB/JVtefM7DfHDlU+IC2gkT7IL
-vGFjKCUl8sNSc2VOEJ0OjkCvEsc+SY02gcaD9utoSJhIHsiByYZuLoXO798bVZi3
-agy/yeTwMkoVdEqYvnvjuiYDwissmKq/+0kdVCJvcaL7Jjc40xXSP0Kcxu2/oenQ
-g9tsah31A4EOMUa6cIdOMkb5t0DksSM8zNg+81N51mI9pQQR1aFLS+ZF5fS2RYHH
-xoylsOS/zCsxBCfO6ZKHoS1CLqJihlgoMh4rRbCxdqSrNlv/PYRN3+PJ8LWpmb33
-7FOt+sui0iZyXvCmh66ucz0WMEuN4scMUCW3KSr+n7MCmnwv8cKr0A2pesgiqZw0
-7AUI76v/5IqTOIrps8F73fa4VHaumfcefBObUxlS6ZhBwXmEL+S6OQUkPEPbNzW2
-En/RVKGI13AX/Jfe829ilmzyg7WW5Vu3+b4oOr9SvzdC6qGCBRdozK2zXjmHctwZ
-FhPTOFseF7JngcTBVADPtZ4BpjAoQPSJ9C+0eVDc2XerfqPKXS8=
-=DVEP
+iQIzBAEBCgAdFiEEwvWeosFv7mOtfW/rQWZzEzGoyHMFAmWO1NEACgkQQWZzEzGo
+yHOkag/+KDS8+/LTCltYWbJcRCjKCDvxom7PoIcDwodBehMbubkwtDnD/3sl5nmZ
+hFp/EUhfrlh7qJaQSUGaLMxHtPa9OWXuevriWUkrfKRtlabYNXog8V4y4DpEstph
++ERx2e85541eN4j6o02JBPDSf7p2g6jmQCEfEqT2Wn2yv3aU6n5PjCKlNoTM1gjt
+NMqxMpRp2ZQcRUr5WpviQT/Ki9wV3iC20YLbul40B8JcqUkbe50QiFzhYLifWw9K
+qx7yxQ4TILgcBZbnYsRR/9Br4Hj1lK9Yo9H/pOaoVRNTckc6PdSzh6dxL4WrJ+N9
+VNCidBXdl+pZdDb+Csl5aUk30YARc6ckaWc21pjA65XBlZ3aPz7GvCk3PHGZsIyi
+DzirM0NjJxJUEoyVWnyLeD0VBEfYpZGSo/BJcYHX+2BjGxssk0g6TyvX0/AxgGMJ
+CM9ShDd+plHlVtvLzK+++uD1OardN+KFzogu8EJH7f4SFn1sU4UGaa1V8zZInkFa
+uWCfj20Iaom9HlPDT/yWyMY/8nSZroGSCLVlFxjDF+9/7DhQuUnjZLW+YDtiinyY
+TTcs/UeHEYaI/5PPq9TTJyob9pW2E7t1VNLLjU/XZ8X09lpUpT5U3j/GS8yCH8i6
+lR82IHNWvAUGSPbfNpd32ozR0a2mgdGvhLXISsfhYSawv+94Kms=
+=Elkl
 -----END PGP SIGNATURE-----
