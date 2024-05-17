@@ -4,44 +4,44 @@ Hash: SHA512
 Origin: ghaaapt.github.io/mullvadvpn-apt
 Label: ghaaapt.github.io/mullvadvpn-apt
 Codename: stable
-Date: Wed, 01 May 2024 00:29:07 UTC
+Date: Fri, 17 May 2024 00:27:43 UTC
 Architectures: amd64 arm64
 Components: main
 Description: Unofficial APT repository for Debian/Ubuntu client of Mullvad VPN
 MD5Sum:
- 81b28c764baebf6d715d76158fa50d40 592 main/binary-amd64/Packages
- 4d3f44ca1831e28342154d9e2bbbbfb4 403 main/binary-amd64/Packages.gz
+ 5e80d99d27b55ee52200db21a5151408 592 main/binary-amd64/Packages
+ 0ce7534cbb3c3f8abbc9259e542759e7 404 main/binary-amd64/Packages.gz
  4e82fdfbcb4d7f7577163bd9acb511a1 196 main/binary-amd64/Release
- 13233223fb205bda1e669422d1aee2e5 592 main/binary-arm64/Packages
- 54b1e51c9787504e69ce452f33e9dc9d 404 main/binary-arm64/Packages.gz
+ ed09b0739d9a504f51b29e5247a28f1d 592 main/binary-arm64/Packages
+ 1ac36ff950d0c26baa789814517b1eb7 402 main/binary-arm64/Packages.gz
  9a9930cf44e8d6950df04f8b8ca37a0b 196 main/binary-arm64/Release
 SHA1:
- 98fdba135a9937f7d895c288d9284d5be854378a 592 main/binary-amd64/Packages
- 795854af981763951ed360bbad4a94463ddddf6c 403 main/binary-amd64/Packages.gz
+ c2ad03fb8e404d7a46771e1dcf7fd31ba38c9f51 592 main/binary-amd64/Packages
+ 61abddfcf47e90b06aa86310aea87db5adafc82b 404 main/binary-amd64/Packages.gz
  10eb09268c110fcc29ade6609074cbcddc1e39ec 196 main/binary-amd64/Release
- 4ef8b9dcbab9b556a942077f1091468b8086b62b 592 main/binary-arm64/Packages
- 41fd395da38a591d9cd07303b73ec2fab94b867e 404 main/binary-arm64/Packages.gz
+ dc3edf47143cf10a2fd354edc0e595bc06464a6f 592 main/binary-arm64/Packages
+ e60fd747b12983adfd2011c68895364513959475 402 main/binary-arm64/Packages.gz
  e8af977e85a8229b3ad0673c44949787537e6dc9 196 main/binary-arm64/Release
 SHA256:
- 78833ead94239c261ea55044d735304074ee994b896b68abb696d8beb163c9ab 592 main/binary-amd64/Packages
- 927c031c60d9441d9ec606ed79fa223579186553497c35b4f795df6eb3f0b7a7 403 main/binary-amd64/Packages.gz
+ af96b83ad01c3ac57cddbb016d1752753ba53202ef3002e097329f46d4847936 592 main/binary-amd64/Packages
+ 5d8a9a053453f7594aa026857b504814fddbaae484b162f19fdfded1d3784d1c 404 main/binary-amd64/Packages.gz
  39f751606b5d0d7892d9eb31d71fd5a0f09c58ac00b2fb689063a24b7da1a978 196 main/binary-amd64/Release
- ca5bbbfc3f662dd41827698f06ba9d110488308e9b8fcb829c87ef6a27850853 592 main/binary-arm64/Packages
- 738404d22aec9cace66e74f9d4f9cb4e6e4b8e46d5d270fe3210fc4a84088fd6 404 main/binary-arm64/Packages.gz
+ 9b36d5d2a1d6c23065d50f831ef0ac85377883d08f6ee242db20b046b505b69b 592 main/binary-arm64/Packages
+ 06dc64650efdd8dd4dbcdf2b9f3de36c77d3afe82bc7b8ec78bdad85c604440d 402 main/binary-arm64/Packages.gz
  b8cd3039673ed64d38a0a12a93c08dca900c866070a4de55736ef6473511d796 196 main/binary-arm64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEwvWeosFv7mOtfW/rQWZzEzGoyHMFAmYxjNQACgkQQWZzEzGo
-yHPF9w/8Dg2AHyk29fFXdAgorSJtNCSl/ypPCfjM0dmJ1+CML2XhEt+eBejm0Ctj
-vHWwqPbgCT7RQJFtrB9J/QCsNNNxJS2MXvuRGgnRnpMlFqyGHFWmx1sucFbvyGe2
-Bm28XB+icS+I9dXGw4WAY1xYJ4LqZJqxTs4yFJK1LQFkl8Bx5SGX0ZyA5nN/2kIm
-HbuiXaj5tY8eyAEqkxxF3yHdcw928ggKt5iZkQpYXZZHau8+uJKVxxafL9bFHvec
-jEzjjRD50E9/UxF7DcU6IMsElf/ID4KC9Ln9/lkdwEm84me6/fToK+oR9V3rHEmi
-8eicqNm73N3ZIuAmJLVJwZemyYEsaOy4FuPxBFwPSgsBoIRI1wnIxY3m+xnOL54m
-6fYXhlCd/o+RUf32hfwJitr0UiG3kJLNBLJf15p5C7X/SZbOMTx8Qbm9y59ZOeUn
-99+C7UJ929grO39x4pLHun2u+33LZg0HVkhz2JBu7vjFEBL6MH9+LrC2WCr5uGYg
-K+A47KrTkROSzGCwa0b3LPgsLaY+cyhqI5+YWy2kRsnk0lm8GDmSnP9wC9R+lbAQ
-zX47fnIgHjjaLu/Lx49MFi6cYkjn6RSWWvjNHQzL3M6B58Mfzte9Bz0l5hSPbSVB
-0QlsyNDhxbLQkTDkq1a6xrmMLcyqPUGZZN0f1V/UxP1TQFXVuW8=
-=Igrw
+iQIzBAEBCgAdFiEEwvWeosFv7mOtfW/rQWZzEzGoyHMFAmZGpIAACgkQQWZzEzGo
+yHNTIg/+OKf/fe6CmUio7cC1Kr59HXjYBBNmky1sjjPAoDOKfXMFDZZSf4Z8jyvZ
+o0Fd04GCXzwQ4UDdmMq/FYvBjsMKK2C/uI2dfIFLbNXVlWZJO21K8WnKj5ZV2NVY
+RFc/g/EwpsKRRcjfz2steySeDwzWUT9QKLT0hhcgwpCH4MAE0oMzV9n/Ty2E0reL
+bUOF6b0k2P2O/ePszfuYhoNoW+gDvfkvy74uM94C+xgvhTYIQwhwVyOZt9roQdJ6
+1dpPlyAJJcX1Ee9poPARwWUlzdotovWoCZkqw1El1rRvY/S7+hWmRGsQt+2XMgnX
+U3RCH4tNjnA6tWMGheSrBHoi4RZoxk65xiGYmDUMbWpjXgXWwKuZIb+lqdQd1vzt
+CXlzlK6yux/2u+esn1aU79hIVdpxNMQ43Hurz3jXZbh/fRvcivoqpAOwlwcDTj7N
+ZTiGpYkXQSbNEiSorLnLDHe3ONixvK4QSb5qaPCnFTMbTQpA0JnDP0f7c8vZ6FI1
+ddz+nUGebb5a76CC5JdjiHnmrKFCRG/x76NKJ5J8D9SDoBUMBU8gy4RLRIYP4skc
+2Wq7DOSlVXdmpHtD7pExfipeYO4SWGsj5E0UfiuPeAIkk6DCXcV4A/45htl5koqb
+bubTS5f+g4t5a2lnxNGEhUfnysNbnn2EioTTjQYxzv+2hIecu6g=
+=dckg
 -----END PGP SIGNATURE-----
