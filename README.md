@@ -1,5 +1,5 @@
 # mullvadvpn-apt
-# Mullvad VPN now officially hosts an APT repository, and users should to use their repository from now on.
+# Mullvad VPN now officially hosts an [APT repository](https://mullvad.net/en/download/vpn/linux), and users should to use their repository from now on.
 **Unofficial** APT repository for [Mullvad VPN](https://github.com/mullvad/mullvadvpn-app) that will check for updates regularly.
 
 EZ update your Mullvad VPN Debian/Ubuntu client.
