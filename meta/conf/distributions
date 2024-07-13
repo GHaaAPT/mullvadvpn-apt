@@ -1,7 +1,0 @@
-Origin: ghaaapt.github.io/mullvadvpn-apt
-Label: ghaaapt.github.io/mullvadvpn-apt
-Codename: stable
-Architectures: amd64 arm64
-Components: main
-Description: Unofficial APT repository for Debian/Ubuntu client of Mullvad VPN
-SignWith: C2F59EA2C16FEE63AD7D6FEB4166731331A8C873
